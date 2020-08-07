@@ -18,7 +18,11 @@ tables are extracted from markdown by the plugin
 ```js
 const convert = require('surcouche-remark-grid-table')
 
-const str = `
+const markdown = `
+# test
+
+you can pass your entire markdown, tables are extracted from markdown by the plugin
+
 -------------------------
  Table Headings  #| Here 
 -------------------------
@@ -44,12 +48,16 @@ const str = `
 
 `
 
-console.log(convert(str))
+console.log(convert(markdown))
 ```
 
-output :
+output the markdown with well formated tables :
 
 ``` markdown
+# test
+
+you can pass your entire markdown, tables are extracted from markdown by the plugin
+
 +-------+---------------+---------------+
 |     Table Headings    |      Here     |
 +-------+---------------+---------------+
