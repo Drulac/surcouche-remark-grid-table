@@ -11,6 +11,8 @@ convert quick-writing table syntax to markdown table syntax
 - use `----` as line separator
 - use `====` to separate header from body of table
 
+tables are extracted from markdown by the plugin
+
 ## code sample
 
 ```js
